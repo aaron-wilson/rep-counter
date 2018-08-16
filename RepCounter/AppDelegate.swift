@@ -12,11 +12,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        guard let statusBar = UIApplication.shared.value(forKey: "statusBar") as? UIView else {
-            return false
-        }
-        statusBar.backgroundColor = .black
-        UIApplication.shared.statusBarStyle = .lightContent
+
+        // Make the status bar black and the status text white
+        // guard let statusBar = UIApplication.shared.value(forKey: "statusBar") as? UIView else {
+        //     return false
+        // }
+        // statusBar.backgroundColor = .black
+        // UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
 
