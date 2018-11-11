@@ -41,7 +41,7 @@ class RepCounterViewController: UIViewController {
         present(alertController, animated: true)
     }
     
-    @IBAction func noseButtonPressed(_ sender: Any) {
+    @IBAction func repButtonPressed(_ sender: Any) {
         counter += 1
     }
 
