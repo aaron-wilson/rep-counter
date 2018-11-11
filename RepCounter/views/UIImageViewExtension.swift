@@ -10,7 +10,7 @@ import UIKit
 let cachedImage = NSCache<NSString, UIImage>()
 
 extension UIImageView {
-    func downloadFrom(urlString: String, contentMode mode: UIViewContentMode = .scaleAspectFit, placeHolder: UIImage = #imageLiteral(resourceName: "logo")) {
+    func downloadFrom(urlString: String, contentMode mode: UIView.ContentMode = .scaleAspectFit, placeHolder: UIImage = #imageLiteral(resourceName: "logo")) {
         contentMode = mode
         
         if let cachedImage = cachedImage.object(forKey: urlString as NSString) {

@@ -7,7 +7,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var recordLabel: UILabel!
+    @IBOutlet weak var recordButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,9 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
         let record = PersistenceManager.sharedInstance.fetchBestWorkout()?.repsCompleted ?? 0
-        recordLabel.text = "Rep Record: \(record)"
+        for state: UIControl.State in [.normal, .highlighted, .disabled, .selected, .focused, .application, .reserved] {
+            recordButton.setTitle(NSLocalizedString("Rep Record: \(record)", comment: ""), for: state)
+        }
     }
     
     @IBAction func shareButtonPressed(_ sender: Any) {
