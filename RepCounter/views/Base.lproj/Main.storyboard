@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="6zB-ep-fBR">
-                                <rect key="frame" x="112.5" y="218.5" width="150" height="230"/>
+                                <rect key="frame" x="112.5" y="190.5" width="150" height="286"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gf5-Ls-Vb5" userLabel="Logo">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="77"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo4" translatesAutoresizingMaskIntoConstraints="NO" id="gf5-Ls-Vb5" userLabel="Logo">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="133"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rl-k9-UqH">
-                                        <rect key="frame" x="19" y="89" width="112" height="39"/>
+                                        <rect key="frame" x="19" y="145" width="112" height="39"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Count Reps">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,7 +35,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58g-MS-OPJ">
-                                        <rect key="frame" x="15" y="140" width="120" height="39"/>
+                                        <rect key="frame" x="15" y="196" width="120" height="39"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="View History">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -45,7 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQN-8r-9cu">
-                                        <rect key="frame" x="24" y="191" width="102" height="39"/>
+                                        <rect key="frame" x="24" y="247" width="102" height="39"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Find Gyms">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,6 +69,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.43529411764705883" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gf5-Ls-Vb5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="52R-yR-XNw"/>
                             <constraint firstItem="6zB-ep-fBR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="A7S-jE-g7W"/>
                             <constraint firstItem="mrO-g4-IZL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="RzC-94-zXs"/>
                             <constraint firstItem="mrO-g4-IZL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="XMm-jB-Hda"/>
@@ -343,7 +344,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="170" height="77"/>
+        <image name="logo4" width="480" height="251"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="nXt-y3-3V4"/>
