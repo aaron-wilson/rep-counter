@@ -1,7 +1,5 @@
 # rep-counter
 
-iOS app to count workout repetitions
-
 <img src="screenshots/screenshot.png" height="500" alt="screenshot" />
 
 ## Workflow
@@ -11,5 +9,4 @@ iOS app to count workout repetitions
 
 ## Todo
 
-- Finish GymViewController
-
+- Replace GymViewController with directions to gym (with cancellable prompt)
